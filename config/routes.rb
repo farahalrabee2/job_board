@@ -5,6 +5,7 @@ Rails.application.routes.draw do
       resources :job_applications
       post 'login', to: 'authentication#create'
       post 'register', to: 'users#create'
+      get 'search', to: 'search#index'
     end
   end
 end
